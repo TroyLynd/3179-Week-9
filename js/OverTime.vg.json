@@ -8,24 +8,34 @@
     "values": [
       {"country": "Finland", "year": 2015, "rank": 6},
       {"country": "Switzerland", "year": 2015, "rank": 1},
-      {"country": "Norway", "year": 2015, "rank": 4},
+      {"country": "Norway", "year": 2015, "rank": 2},
       {"country": "Denmark", "year": 2015, "rank": 3},
+      {"country": "Null", "year": 2015, "rank": 5},
+      {"country": "Null", "year": 2015, "rank": 4},
       {"country": "Finland", "year": 2016, "rank": 5},
       {"country": "Switzerland", "year": 2016, "rank": 2},
       {"country": "Norway", "year": 2016, "rank": 4},
       {"country": "Denmark", "year": 2016, "rank": 1},
+      {"country": "Null", "year": 2016, "rank": 3},
+      {"country": "Null", "year": 2016, "rank": 6},
       {"country": "Finland", "year": 2017, "rank": 5},
       {"country": "Switzerland", "year": 2017, "rank": 4},
       {"country": "Norway", "year": 2017, "rank": 1},
       {"country": "Denmark", "year": 2017, "rank": 2},
+      {"country": "Null", "year": 2017, "rank": 3},
+      {"country": "Null", "year": 2017, "rank": 6},
       {"country": "Finland", "year": 2018, "rank": 1},
       {"country": "Switzerland", "year": 2018, "rank": 5},
       {"country": "Norway", "year": 2018, "rank": 2},
       {"country": "Denmark", "year": 2018, "rank": 3},
+      {"country": "Null", "year": 2018, "rank": 4},
+      {"country": "Null", "year": 2018, "rank": 6},
       {"country": "Finland", "year": 2019, "rank": 1},
       {"country": "Switzerland", "year": 2019, "rank": 6},
       {"country": "Norway", "year": 2019, "rank": 3},
-      {"country": "Denmark", "year": 2019, "rank": 2}
+      {"country": "Denmark", "year": 2019, "rank": 2},
+      {"country": "Null", "year": 2019, "rank": 4},
+      {"country": "Null", "year": 2019, "rank": 5}
     ]
   },
   "transform": [{
@@ -41,7 +51,7 @@
   "mark": {"type": "line", "orient": "vertical"},
   "encoding": {
     "x": {"field": "year", "type": "ordinal"},
-    "y": {"field": "rank", "type": "quantitative", "scale": {"domain": [0,5]}},
+    "y": {"field": "rank", "type": "quantitative", "scale": {"domain": [6,1]}},
     "color": {
       "field": "country", "type": "nominal",
       "scale": {
