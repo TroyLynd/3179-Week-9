@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Bar chart showing the lowest ranked countries.",
+  "data": {"url": "https://raw.githubusercontent.com/TroyLynd/3179-Week-9/main/data/2019.csv"},
+  "height": {"step": 17},
+  "mark": "bar",
+  "transform": [{"filter": "datum.Score < 4"}],
+  "encoding": {
+    "y": {
+      "field": "Country or region",
+      "type": "nominal",
+      "sort": "-x"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "Score",
+      "title": "Overall score",
+      "scale": {"domain": [2.5,4]}
+    }    
+  }
+}
