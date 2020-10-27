@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "A bar graph showing the scores of the top 5 students. This shows an example of the window transform, for how the top K (5) can be filtered, and also how a rank can be computed for each student.",
+  "data":
+    {"url": "https://raw.githubusercontent.com/TroyLynd/3179-Week-9/main/data/2019.csv"},
+  "transform": [
+    {
+      "window": [{
+        "op": "rank",
+        "as": "rank"
+      }],
+      "sort": [{ "field": "GDP per capita", "order": "descending" }]
+    }, {
+      "filter": "datum.rank <= 10"
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+        "aggregate": "sum",
+      "field": "GDP per capita",
+      "title": "GDP" 
+    },
+    "y": {
+        "field": "Country or region",
+        "type": "nominal",
+        "sort": {"field": "GDP per capita", "op": "average", "order":"descending"}
+    }
+  }
+}
