@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": {
+    "text": "Top countries over time",
+    "frame": "bounds"
+  },
+  "data": {
+    "values": [
+      {"country": "Finland", "year": 2015, "rank": 6},
+      {"country": "Switzerland", "year": 2015, "rank": 1},
+      {"country": "Norway", "year": 2015, "rank": 4},
+      {"country": "Denmark", "year": 2015, "rank": 3},
+      {"country": "Finland", "year": 2016, "rank": 5},
+      {"country": "Switzerland", "year": 2016, "rank": 2},
+      {"country": "Norway", "year": 2016, "rank": 4},
+      {"country": "Denmark", "year": 2016, "rank": 1},
+      {"country": "Finland", "year": 2017, "rank": 5},
+      {"country": "Switzerland", "year": 2017, "rank": 4},
+      {"country": "Norway", "year": 2017, "rank": 1},
+      {"country": "Denmark", "year": 2017, "rank": 2},
+      {"country": "Finland", "year": 2018, "rank": 1},
+      {"country": "Switzerland", "year": 2018, "rank": 5},
+      {"country": "Norway", "year": 2018, "rank": 2},
+      {"country": "Denmark", "year": 2018, "rank": 3},
+      {"country": "Finland", "year": 2019, "rank": 1},
+      {"country": "Switzerland", "year": 2019, "rank": 6},
+      {"country": "Norway", "year": 2019, "rank": 3},
+      {"country": "Denmark", "year": 2019, "rank": 2}
+    ]
+  },
+  "transform": [{
+    "sort": [
+      {"field": "rank", "order": "ascending"}
+    ],
+    "window": [{
+      "op": "rank",
+      "as": "rank"
+    }],
+    "groupby": ["year"]
+  }],
+  "mark": {"type": "line", "orient": "vertical"},
+  "encoding": {
+    "x": {"field": "year", "type": "ordinal"},
+    "y": {"field": "rank", "type": "quantitative", "scale": {"domain": [0,5]}},
+    "color": {
+      "field": "country", "type": "nominal",
+      "scale": {
+        "domain": ["Finland", "Switzerland", "Norway", "Denmark"],
+        "range": ["black", "#127153", "#C91A3C", "#0C71AB"]
+      }
+    }
+  }
+}
