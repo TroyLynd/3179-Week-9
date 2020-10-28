@@ -59,7 +59,7 @@
     <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-1-1">
-        <h1>Worldwide Country Rankings</h1>
+        <h1>Worldwide Country Rankings11</h1>
         <p>Every year, countries are ranked against each other based on multiple metrics. This page shows gives a more in depth look into these rankings.</p>
       </div>
     </div>
@@ -110,24 +110,25 @@
   
   
    <div class="pure-g">
-    <div class="pure-u-2-3">
-      <div id="OverTime" class="vis-container">
+      <div class="pure-u-1-3">
+        <div class="description description-left">
+          <h2>Top countries overall</h2>
+          <p>This chart shows the top 20 countries for 2019, sorted by their overall score.</p>
+        </div>
+        </div>
+      <div class="pure-u-2-3">
+        <div id="OverTime" class="vis-container">
 
-        <script type="text/javascript">
+          <script type="text/javascript">
 
           var spec2 = "js/OverTime.vl.json";
           vegaEmbed('#OverTime', spec2).then(function(result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
           }).catch(console.error);
-        </script>
-      </div>
+          </script>
+        </div>
      </div>
-     <div class="pure-u-1-3">
-       <div class="description description-left">
-         <h2>Top countries overall</h2>
-         <p>This chart shows the top 20 countries for 2019, sorted by their overall score.</p>
-       </div>
-      </div>
+     
   
 <div id="choropleth_map"></div>
 
