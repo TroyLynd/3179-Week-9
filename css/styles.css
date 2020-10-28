@@ -9,12 +9,12 @@
 }
 
 #OverTime {
-	top:100px;
-	bottom: 100px; 
+	top:300px;
+	bottom: 300px; 
 	left: 100px;
 	right: 100px;
-	/*height: 3000px;
-	width: 3000px;*/
+	/*height: 1000px;
+	width: 800px;*/
 }
 
 #BarChart {
@@ -22,8 +22,8 @@
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
-	/*height: 3000px;
-	width: 3000px;*/
+	/*height: 1000px;
+	width: 800px;*/
 }
 
 #choropleth_map {
@@ -31,6 +31,6 @@
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
-	/*height: 3000px;
-	width: 3000px;*/
+	/*height: 1000px;
+	width: 800px;*/
 }
