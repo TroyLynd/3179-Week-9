@@ -25,7 +25,8 @@
     "mark": "bar",
     "encoding": {
       "x": {"aggregate": "sum", "field": {"repeat": "repeat"}},
-      "y": {"field": "Country or region", "type": "nominal", "sort": "-x"}
+      "y": {"field": "Country or region", "type": "nominal", "sort": "-x"},
+    "color": {"value": "lightblue"}
     }
   }
 }
