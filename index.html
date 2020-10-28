@@ -115,7 +115,7 @@
           <h2>Top countries overall</h2>
           <p>This chart shows the top 20 countries for 2019, sorted by their overall score.</p>
         </div>
-        </div>
+      </div>
       <div class="pure-u-2-3">
         <div id="OverTime" class="vis-container">
 
@@ -127,17 +127,23 @@
           }).catch(console.error);
           </script>
         </div>
-     </div>
+      </div>
      
-  
-<div id="choropleth_map"></div>
+  <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div id="choropleth_map" class="vis-container">
 
-<script type="text/javascript">
+          <script type="text/javascript">
 
-  var spec2 = "js/choropleth_map.vg.json";
-  vegaEmbed('#choropleth_map', spec2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-</script>
+          var spec2 = "js/choropleth_map.vl.json";
+          vegaEmbed('#choropleth_map', spec2).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+          }).catch(console.error);
+          </script>
+        </div>
+      </div>
+    </div>
+     
+ 
 </body>
 </html>
