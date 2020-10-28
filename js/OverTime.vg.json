@@ -1,9 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": {
-    "text": "Top countries over time",
-    "frame": "bounds"
-  },
+  "title": {"text": "Top countries over time", "frame": "bounds"},
+  "width": 500,
   "data": {
     "values": [
       {"country": "Finland", "year": 2015, "rank": 6},
@@ -38,22 +36,20 @@
       {"country": "Null", "year": 2019, "rank": 5}
     ]
   },
-  "transform": [{
-    "sort": [
-      {"field": "rank", "order": "ascending"}
-    ],
-    "window": [{
-      "op": "rank",
-      "as": "rank"
-    }],
-    "groupby": ["year"]
-  }],
+  "transform": [
+    {
+      "sort": [{"field": "rank", "order": "ascending"}],
+      "window": [{"op": "rank", "as": "rank"}],
+      "groupby": ["year"]
+    }
+  ],
   "mark": {"type": "line", "orient": "vertical"},
   "encoding": {
     "x": {"field": "year", "type": "ordinal"},
-    "y": {"field": "rank", "type": "quantitative", "scale": {"domain": [6,1]}},
+    "y": {"field": "rank", "type": "quantitative", "scale": {"domain": [6, 1]}},
     "color": {
-      "field": "country", "type": "nominal",
+      "field": "country",
+      "type": "nominal",
       "scale": {
         "domain": ["Finland", "Switzerland", "Norway", "Denmark"],
         "range": ["black", "#127153", "#C91A3C", "#0C71AB"]
