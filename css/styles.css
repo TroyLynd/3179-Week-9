@@ -16,3 +16,21 @@
 	/*height: 3000px;
 	width: 3000px;*/
 }
+
+#BarChart {
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 3000px;
+	width: 3000px;*/
+}
+
+#choropleth_map {
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 3000px;
+	width: 3000px;*/
+}
