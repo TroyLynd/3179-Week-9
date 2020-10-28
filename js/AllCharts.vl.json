@@ -17,6 +17,8 @@
     {"filter": "datum.rank <= 10"}
   ],
   "spec": {
+    "width": 120,
+    "height": 200,
     "data": {
       "url": "https://raw.githubusercontent.com/TroyLynd/3179-Week-9/main/data/2019.csv"
     },
