@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": {"text": "Top countries over time", "frame": "bounds"},
-  "width": 500,
+  "width": 470,
   "data": {
     "values": [
       {"country": "Finland", "year": 2015, "rank": 6},
