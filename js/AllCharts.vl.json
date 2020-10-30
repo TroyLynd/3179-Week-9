@@ -22,7 +22,7 @@
     "data": {
       "url": "https://raw.githubusercontent.com/TroyLynd/3179-Week-9/main/data/2019.csv"
     },
-    "mark": "bar",
+    "mark": {"type": "bar", "tooltip": true},
     "encoding": {
       "x": {"aggregate": "sum", "field": {"repeat": "repeat"}},
       "y": {"field": "Country or region", "type": "nominal", "sort": "-x"},
