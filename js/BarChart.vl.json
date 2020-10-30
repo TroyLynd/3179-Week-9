@@ -6,7 +6,7 @@
   },
   "height": {"step": 17},
   "width": 300,
-  "mark": "bar",
+  "mark": {"type": "bar", "tooltip": true},
   "transform": [{"filter": "datum.Score > 6.8"}],
   "encoding": {
     "y": {"field": "Country or region", "type": "nominal", "sort": "-x"},
