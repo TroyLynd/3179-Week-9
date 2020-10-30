@@ -43,7 +43,7 @@
       "groupby": ["year"]
     }
   ],
-  "mark": {"type": "line", "orient": "vertical"},
+  "mark": {"type": "line", "orient": "vertical", "strokeWidth": 5},
   "encoding": {
     "x": {"field": "year", "type": "ordinal"},
     "y": {"field": "rank", "type": "quantitative", "scale": {"domain": [6, 1]}},
