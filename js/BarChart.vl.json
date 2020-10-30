@@ -17,6 +17,6 @@
       "scale": {"domain": [6.5, 8]}
       
     },
-    "color": {"value": "lightblue"}
+    "color": {"field": "Country or region"}
   }
 }
