@@ -5,7 +5,7 @@
     "url": "https://raw.githubusercontent.com/TroyLynd/3179-Week-9/main/data/2019.csv"
   },
   "height": {"step": 17},
-  "width": 350,
+  "width": 300,
   "mark": "bar",
   "transform": [{"filter": "datum.Score > 6.8"}],
   "encoding": {
