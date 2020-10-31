@@ -4,6 +4,7 @@
     "url": "https://raw.githubusercontent.com/TroyLynd/3179-Week-9/main/data/Finland.csv"
   },
   "width": 125,
+  "height": 190,
   "mark": "rect",
   "encoding": {
     "y": {"field": "Metric", "type": "nominal"},
