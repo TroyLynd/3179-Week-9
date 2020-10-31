@@ -1,13 +1,14 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "data": {"url": "https://raw.githubusercontent.com/TroyLynd/3179-Week-9/main/data/Finland.csv"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/TroyLynd/3179-Week-9/main/data/Finland.csv"
+  },
+  "width": 125,
   "mark": "rect",
   "encoding": {
     "y": {"field": "Metric", "type": "nominal"},
     "x": {"field": "Year", "type": "ordinal"},
     "color": {"aggregate": "mean", "field": "Score"}
   },
-  "config": {
-    "axis": {"grid": true, "tickBand": "extent"}
-  }
+  "config": {"axis": {"grid": true, "tickBand": "extent"}}
 }
