@@ -5,7 +5,7 @@
   },
   "width": 125,
   "height": 190,
-  "mark": "rect",
+  "mark": {"type":"rect", "tooltip": true},
   "encoding": {
     "y": {"field": "Metric", "type": "nominal"},
     "x": {"field": "Year", "type": "ordinal"},
