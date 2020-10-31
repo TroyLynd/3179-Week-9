@@ -1,0 +1,12 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Finland's country score over time.",
+  "data": {"url": "https://raw.githubusercontent.com/TroyLynd/3179-Week-9/main/data/FinlandScoreOnly.csv"},
+  "mark": {"type":"line","strokeWidth":5},
+  "width": 300,
+  "encoding": {
+    "x": {"field": "Year", "type": "ordinal"},
+    "y": {"field": "Score", "type": "quantitative", "scale": {"domain": [7, 8]}},
+    "color": {"value":"lightblue"}
+  }
+}
